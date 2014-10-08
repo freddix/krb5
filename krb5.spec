@@ -1,11 +1,11 @@
 Summary:	Kerberos network authentication syste
 Name:		krb5
-Version:	1.12.1
-Release:	3
+Version:	1.12.2
+Release:	0.1
 License:	MIT
 Group:		Networking
 Source0:	http://web.mit.edu/kerberos/dist/krb5/1.12/%{name}-%{version}-signed.tar
-# Source0-md5:	524b1067b619cb5bf780759b6884c3f5
+# Source0-md5:	357f1312b7720a0a591e22db0f7829fe
 Patch0:		%{name}-LDFLAGS.patch
 BuildRequires:	libcom_err-devel
 BuildRequires:	openldap-devel
