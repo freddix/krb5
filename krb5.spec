@@ -1,11 +1,11 @@
 Summary:	Kerberos network authentication syste
 Name:		krb5
-Version:	1.12.2
+Version:	1.12.3
 Release:	0.1
 License:	MIT
 Group:		Networking
 Source0:	http://web.mit.edu/kerberos/dist/krb5/1.12/%{name}-%{version}-signed.tar
-# Source0-md5:	357f1312b7720a0a591e22db0f7829fe
+# Source0-md5:	c23f1a8e37319f9855ea5a2acd2a8fe7
 Patch0:		%{name}-LDFLAGS.patch
 BuildRequires:	libcom_err-devel
 BuildRequires:	openldap-devel
@@ -141,7 +141,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libkrad.so.0
 %attr(755,root,root) %ghost %{_libdir}/libkrb5.so.3
 %attr(755,root,root) %ghost %{_libdir}/libkrb5support.so.0
-%attr(755,root,root) %ghost %{_libdir}/libverto.so.0
 %attr(755,root,root) %{_libdir}/libgssapi_krb5.so.*.*
 %attr(755,root,root) %{_libdir}/libgssrpc.so.*.*
 %attr(755,root,root) %{_libdir}/libk5crypto.so.*.*
@@ -152,7 +151,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libkrad.so.*.*
 %attr(755,root,root) %{_libdir}/libkrb5.so.*.*
 %attr(755,root,root) %{_libdir}/libkrb5support.so.*.*
-%attr(755,root,root) %{_libdir}/libverto.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
